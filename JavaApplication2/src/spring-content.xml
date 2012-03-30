@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:beans="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:lang="http://www.springframework.org/schema/lang"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd   http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+ 
+    <bean id="repos" class="pro.StudentRepositoryEx"> </bean>
+    <bean id="smsystem"  class="pro.StudentManagementSystem" p:repo-ref="repos"> </bean>
+    
+    <bean id="stud1" class="pro.Student" p:firstName="Jayath" p:lastName="Epasinghe" p:regNumber="124" p:address="Mahara"> </bean>
+    <bean id="stud2" class="pro.Student" p:firstName="Gihan" p:lastName="Gunarathne" p:regNumber="356" p:address="Gampola"> </bean>
+    <bean id="stud3" class="pro.Student" p:firstName="Ruwan" p:lastName="Wijerathna" p:regNumber="223" p:address="Polhena"> </bean>
+    
+
+</beans>
